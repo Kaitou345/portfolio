@@ -34,7 +34,7 @@ export default function HeroSection({}: Props) {
         </h2>
         <h1 className="mt-3 text-5xl font-semibold leading-tight">
           <span>
-            I'm Seyan, <br className="md:hidden" />{" "}
+            I&aposm Seyan, <br className="md:hidden" />{" "}
             <span className="text-orange-600">{text}</span>
           </span>
           <Cursor cursorColor="hsl(215, 20%, 65%)" cursorStyle="_" />
