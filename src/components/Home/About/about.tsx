@@ -36,7 +36,7 @@ export default function AboutSection({}: Props) {
           Here is a little <span className="text-orange-600">background</span>
         </h4>
         <p className="text-base max-w-[450px]">
-          This is placeholder stuff. Don't bother reading it. Or read it.
+          This is placeholder stuff. Don&apos;t bother reading it. Or read it.
           Whatever floats your <span className="text-orange-600">boat</span>{" "}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
