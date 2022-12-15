@@ -21,7 +21,7 @@ export default function RootLayout({
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
-      <body className="bg-Black ">{children}</body>
+      <body className="bg-Black overflow-hidden">{children}</body>
     </html>
   );
 }
