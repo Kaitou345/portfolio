@@ -17,7 +17,10 @@ export default function HeroSection({}: Props) {
 
   return (
     <div className="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden">
-      <div className="absolute h-screen flex items-center justify-center ">
+      <div
+        className="absolute h-screen flex items-center justify-center"
+        aria-hidden="true"
+      >
         <BackgroundCirlces />
       </div>
       <Image
@@ -41,7 +44,7 @@ export default function HeroSection({}: Props) {
         </h1>
       </div>
 
-      <nav className="mt-10 flex flex-row md:gap-5 z-20 ">
+      <nav className="mt-10 flex flex-row md:gap-5 z-20">
         <a href="#about" className="heroButton">
           About
         </a>
