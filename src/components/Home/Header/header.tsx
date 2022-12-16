@@ -46,13 +46,13 @@ export default function Header({}: Props) {
           className="flex flex-row items-center cursor-pointer animate-slide-from-right relative transition-colors text-lg font-semibold tracking-wide text-orange-600 hover:text-orange-400"
         >
           <a
-            href="#about"
+            href="#contact"
             className="absolute h-full w-full"
             rel="nofollow"
             aria-label="contact"
           ></a>
           <SocialIcon
-            url="#about"
+            url="#contact"
             network="email"
             fgColor="currentColor"
             bgColor="transparent"
