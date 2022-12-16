@@ -30,6 +30,7 @@ export default function HeroSection({}: Props) {
         height={128}
         className="relative object-cover rounded-full h-40 w-40 mt-44"
         alt="My photo"
+        priority
       />
       <div className="mt-5 z-20">
         <h2 className="uppercase text-neutral-400 tracking-[0.5rem]">
