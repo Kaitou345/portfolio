@@ -1,22 +1,35 @@
+"use client";
+
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 
 type Props = {};
 
 export default function BackgroundCirlces({}: Props) {
+  let boxVariants = {};
+
+  // disable animation on mobile
+  if (typeof window !== "undefined") {
+    const isMobile = window?.innerWidth < 768;
+    if (!isMobile) {
+      boxVariants = {
+        initial: {
+          opacity: 0,
+        },
+        animate: {
+          opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
+          scale: [1, 0.5, 0.5, 2, 1],
+          borderRadius: ["20%", "20%", "50%", "80%", "20%"],
+        },
+        transition: {
+          duration: 2.5,
+        },
+      } satisfies MotionProps;
+    }
+  }
   return (
     <motion.div
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0],
-        scale: [1, 0.5, 0.5, 2, 1],
-        borderRadius: ["20%", "20%", "50%", "80%", "20%"],
-      }}
-      transition={{
-        duration: 2.5,
-      }}
+      {...boxVariants}
       className="relative flex items-center justify-center "
     >
       <div className="absolute border border-blue-400 rounded-full h-[300px] w-[300px] animate-ping " />

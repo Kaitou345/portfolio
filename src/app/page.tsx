@@ -5,7 +5,7 @@ import SkillsSection from "../components/Home/Skills/skills";
 
 export default function HomePage() {
   return (
-    <div className="text-white h-screen z-0 snap-y md:snap-none snap-mandatory overflow-y-scroll scroll-smooth">
+    <div className="text-white h-screen z-0 snap-y snap-mandatory overflow-y-scroll scroll-smooth">
       <Header />
       <section id="hero" className="snap-start">
         <HeroSection />

@@ -11,9 +11,22 @@ module.exports = {
           "0%, 100%": { transform: "scale(1.3)" },
           "50%": { transform: "scale(1.1)" },
         },
+        slideLeft: {
+          "0%": { transform: "translate(300px)", opacity: "0" },
+          "100%": { transform: "translate(0)", opacity: "1" },
+        },
+
+        slideRight: {
+          "0%": { transform: "translate(-300px)", opacity: "0" },
+          "100%": { transform: "translate(0)", opacity: "1" },
+        },
       },
       animation: {
         "ping-slow": "pingSlow 1s ease-in-out infinite",
+        "slide-from-right":
+          "slideLeft 1s cubic-bezier(0.860, 0.000, 0.070, 1.000)",
+        "slide-from-left":
+          "slideRight 1s cubic-bezier(0.860, 0.000, 0.070, 1.000)",
       },
       textColor: {
         Purple: "#8800ff",
