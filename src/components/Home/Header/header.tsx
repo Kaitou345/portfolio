@@ -15,7 +15,7 @@ export default function Header({}: Props) {
             target="_blank"
             rel="noreferrer"
             aria-label="facebook"
-            tabIndex={1}
+            role="listitem"
           />
           <SocialIcon
             className="hover:text-orange-500 transition-all"
@@ -25,6 +25,7 @@ export default function Header({}: Props) {
             target="_blank"
             rel="noreferrer"
             aria-label="github"
+            role="listitem"
           />
           <SocialIcon
             className="hover:text-orange-500 transition-all"
@@ -34,6 +35,7 @@ export default function Header({}: Props) {
             target="_blank"
             rel="noreferrer"
             aria-label="instagram"
+            role="listitem"
           />
         </div>
 
