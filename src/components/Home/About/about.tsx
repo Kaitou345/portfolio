@@ -8,9 +8,9 @@ type Props = {};
 export default function AboutSection({}: Props) {
   return (
     <div className="min-h-screen relative flex flex-col md:flex-row text-center md:text-left max-w-6xl px-10 justify-center items-center mx-auto gap-20 pt-20">
-      <h3 className="absolute top-24 uppercase text-4xl md:text-2xl text-neutral-400 tracking-[1rem] ">
+      <h2 className="absolute top-24 uppercase text-4xl md:text-2xl text-neutral-300 tracking-[1rem] ">
         About
-      </h3>
+      </h2>
 
       <motion.div
         initial={{ x: -200, opacity: 0 }}
@@ -32,9 +32,9 @@ export default function AboutSection({}: Props) {
       </motion.div>
 
       <motion.div className="space-y-10">
-        <h4 className="text-4xl font-semibold">
+        <h3 className="text-4xl font-semibold">
           Here is a little <span className="text-orange-600">background</span>
-        </h4>
+        </h3>
         <p className="text-base max-w-[450px]">
           This is placeholder stuff. Don&apos;t bother reading it. Or read it.
           Whatever floats your <span className="text-orange-400">boat</span>{" "}

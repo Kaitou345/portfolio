@@ -14,6 +14,7 @@ export default function Header({}: Props) {
             bgColor="transparent"
             target="_blank"
             rel="noreferrer"
+            aria-label="facebook"
           />
           <SocialIcon
             className="hover:text-orange-500 transition-all"
@@ -22,6 +23,7 @@ export default function Header({}: Props) {
             bgColor="transparent"
             target="_blank"
             rel="noreferrer"
+            aria-label="github"
           />
           <SocialIcon
             className="hover:text-orange-500 transition-all"
@@ -30,6 +32,7 @@ export default function Header({}: Props) {
             bgColor="transparent"
             target="_blank"
             rel="noreferrer"
+            aria-label="instagram"
           />
         </div>
 
@@ -39,12 +42,20 @@ export default function Header({}: Props) {
           // transition={{ duration: 1, type: "spring" }}
           className="flex flex-row items-center cursor-pointer animate-slide-from-right relative transition-colors text-lg font-semibold tracking-wide text-orange-600 hover:text-orange-400"
         >
-          <a href="#contact" className="absolute h-full w-full"></a>
+          <a
+            href="#about"
+            className="absolute h-full w-full"
+            rel="nofollow"
+            aria-label="contact"
+          ></a>
           <SocialIcon
+            url="#about"
             network="email"
             fgColor="currentColor"
             bgColor="transparent"
             className="animate-ping-slow animation-delay-2000"
+            role="button"
+            tabIndex={-1}
           />
           <p className="uppercase hidden md:inline-flex ">Get In Touch</p>
         </div>

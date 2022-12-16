@@ -42,17 +42,17 @@ export default function HeroSection({}: Props) {
       </div>
 
       <nav className="mt-10 flex flex-row md:gap-5 z-20 ">
-        <a href="#about">
-          <button className="heroButton">About</button>
+        <a href="#about" className="heroButton">
+          About
         </a>
-        <a href="#exp">
-          <button className="heroButton">Experience</button>
+        <a href="#exp" className="heroButton">
+          Experience
         </a>
-        <a href="#skills">
-          <button className="heroButton">Skills</button>
+        <a href="#skills" className="heroButton">
+          Skills
         </a>
-        <a href="#projects">
-          <button className="heroButton">Projects</button>
+        <a href="#projects" className="heroButton">
+          Projects
         </a>
       </nav>
     </div>
