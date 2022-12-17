@@ -16,7 +16,7 @@ export default function HeroSection({}: Props) {
   });
 
   return (
-    <div className="relative z-30 h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+    <div className="relative isolate z-10 h-screen flex flex-col justify-center items-center text-center overflow-hidden">
       <div
         className="absolute h-screen flex items-center justify-center"
         aria-hidden="true"

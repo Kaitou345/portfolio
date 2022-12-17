@@ -30,7 +30,7 @@ export default function BackgroundCirlces({}: Props) {
   return (
     <motion.div
       {...boxVariants}
-      className="relative flex items-center justify-center -z-10"
+      className="relative flex items-center justify-center -z-20"
     >
       <div className="absolute border rounded-full h-[300px] w-[300px]   border-blue-400   animate-ping     " />
       <div className="absolute border rounded-full h-[400px] w-[400px]   border-orange-600 animate-pulse animation-delay-600   opacity-30" />

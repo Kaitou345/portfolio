@@ -4,7 +4,7 @@ type Props = {};
 
 export default function Header({}: Props) {
   return (
-    <header className="fixed w-full z-20">
+    <header className="fixed w-full z-30">
       <div className="w-full top-0 flex items-start justify-between max-w-6xl mx-auto p-5  md:items-center text-white">
         <div className="animate-slide-from-left" role="list">
           <SocialIcon
