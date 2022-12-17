@@ -21,14 +21,14 @@ export default function ContactSection({}: Props) {
       <form className="grid gap-2 text-black">
         <div className="grid grid-cols-2 gap-2">
           <input
-            className="h-9 p-3 focus:outline outline-orange-500  rounded-sm bg-neutral-800 caret-white placeholder-neutral-500"
+            className="h-9 p-3 focus:outline outline-orange-500 text-neutral-200 text-base rounded-sm bg-neutral-800 caret-white placeholder-neutral-400"
             type="text"
             placeholder="Name*"
             name=""
             id=""
           />
           <input
-            className="h-9 p-3 focus:outline outline-orange-500  rounded-sm bg-neutral-800 caret-white placeholder-neutral-500"
+            className="h-9 p-3 focus:outline outline-orange-500 text-neutral-200 text-base rounded-sm bg-neutral-800 caret-white placeholder-neutral-400"
             type="email"
             placeholder="Email*"
             name=""
@@ -37,11 +37,11 @@ export default function ContactSection({}: Props) {
         </div>
         <input
           type="text"
-          className="h-9 p-3 focus:outline outline-orange-500  rounded-sm bg-neutral-800 caret-white placeholder-neutral-500"
+          className="h-9 p-3 focus:outline outline-orange-500 text-neutral-200 text-base rounded-sm bg-neutral-800 caret-white placeholder-neutral-400"
           placeholder="Subject"
         />
         <textarea
-          className="h-32 p-3 focus:outline outline-orange-500  rounded-sm resize-none bg-neutral-800 caret-white placeholder-neutral-500"
+          className="h-32 p-3 focus:outline outline-orange-500 text-neutral-200 text-base rounded-sm resize-none bg-neutral-800 caret-white placeholder-neutral-400"
           placeholder="Write your thoughts..."
         />
         <button
