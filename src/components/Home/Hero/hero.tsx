@@ -16,7 +16,7 @@ export default function HeroSection({}: Props) {
   });
 
   return (
-    <div className="relative z-20 h-screen flex flex-col justify-center items-center text-center overflow-hidden">
+    <div className="relative z-30 h-screen flex flex-col justify-center items-center text-center overflow-hidden">
       <div
         className="absolute h-screen flex items-center justify-center"
         aria-hidden="true"
@@ -24,13 +24,13 @@ export default function HeroSection({}: Props) {
         <BackgroundCirlces />
       </div>
       <Image
-        // src="https://miro.medium.com/max/1071/1*g4lFXNeYniGsEwJefXeqcg.jpeg"
         src="/imgs/seyan.jpg"
         width={128}
         height={128}
         className="relative object-cover rounded-full h-40 w-40 mt-44"
         alt="My photo"
         placeholder="blur"
+        blurDataURL="/imgs/seyan.jpg"
         priority
       />
       <div className="mt-5 ">

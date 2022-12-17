@@ -24,6 +24,7 @@ export default function AboutSection({}: Props) {
       >
         <Image
           src="/imgs/seyan.jpg"
+          blurDataURL="/imgs/seyan.jpg"
           width={400}
           height={400}
           className="object-cover"
