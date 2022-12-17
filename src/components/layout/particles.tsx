@@ -67,7 +67,7 @@ export default function ParticleBackground() {
             distance: 200,
             enable: false,
             opacity: 0.5,
-            width: 0.7,
+            width: 1,
           },
           collisions: {
             enable: false,
