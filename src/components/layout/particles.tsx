@@ -40,8 +40,8 @@ export default function ParticleBackground() {
               mode: "push",
             },
             onHover: {
-              enable: false,
-              mode: "repulse",
+              enable: true,
+              mode: "grab",
             },
             resize: true,
           },
@@ -50,8 +50,11 @@ export default function ParticleBackground() {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
+            },
+            grab: {
+              distance: 200,
             },
           },
         },
@@ -61,7 +64,7 @@ export default function ParticleBackground() {
           },
           links: {
             color: "#ffffff",
-            distance: 150,
+            distance: 200,
             enable: false,
             opacity: 0.5,
             width: 1,
@@ -76,7 +79,7 @@ export default function ParticleBackground() {
               default: "bounce",
             },
             random: false,
-            speed: 0.1,
+            speed: 0.3,
             straight: false,
           },
           number: {
@@ -87,13 +90,13 @@ export default function ParticleBackground() {
             value: 30,
           },
           opacity: {
-            value: 0.5,
+            value: 0.7,
           },
           shape: {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 2 },
+            value: { min: 1, max: 1.5 },
           },
         },
         detectRetina: true,
