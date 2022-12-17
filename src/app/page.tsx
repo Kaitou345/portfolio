@@ -9,7 +9,9 @@ import ParticleBackground from "../components/layout/particles";
 
 export default function HomePage() {
   return (
-    <div className="text-white h-screen z-0 snap-y snap-mandatory overflow-y-scroll scroll-smooth">
+    <div className="relative text-white h-screen z-0 snap-y snap-mandatory overflow-y-scroll scroll-smooth">
+      <ParticleBackground />
+
       <Header />
       <section id="hero" className="snap-start">
         <HeroSection />
@@ -29,7 +31,6 @@ export default function HomePage() {
       <section id="contact" className="snap-center">
         <ContactSection />
       </section>
-      <ParticleBackground />
     </div>
   );
 }

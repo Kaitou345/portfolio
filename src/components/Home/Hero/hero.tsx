@@ -32,7 +32,7 @@ export default function HeroSection({}: Props) {
         alt="My photo"
         priority
       />
-      <div className="mt-5 z-20">
+      <div className="mt-5 ">
         <h2 className="uppercase text-neutral-400 tracking-[0.5rem]">
           Software Engineer
         </h2>
@@ -45,7 +45,7 @@ export default function HeroSection({}: Props) {
         </h1>
       </div>
 
-      <nav className="mt-10 flex flex-row md:gap-5 z-20">
+      <nav className="mt-10 flex flex-row md:gap-5 ">
         <a href="#about" className="heroButton">
           About
         </a>

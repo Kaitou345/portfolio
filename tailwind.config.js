@@ -20,6 +20,10 @@ module.exports = {
           "0%": { transform: "translate(-300px)", opacity: "0" },
           "100%": { transform: "translate(0)", opacity: "1" },
         },
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
       },
       animation: {
         "ping-slow": "pingSlow 1s ease-in-out infinite",
@@ -27,6 +31,7 @@ module.exports = {
           "slideLeft 1s cubic-bezier(0.860, 0.000, 0.070, 1.000)",
         "slide-from-left":
           "slideRight 1s cubic-bezier(0.860, 0.000, 0.070, 1.000)",
+        "fade-in": "fadeIn 1s ease-in",
       },
       textColor: {
         Purple: "#8800ff",
