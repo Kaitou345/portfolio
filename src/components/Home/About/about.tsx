@@ -26,8 +26,9 @@ export default function AboutSection({}: Props) {
           src="/imgs/seyan.jpg"
           width={400}
           height={400}
-          className="object-cover "
+          className="object-cover"
           alt="My photo"
+          placeholder="blur"
         />
       </motion.div>
 

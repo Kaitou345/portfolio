@@ -30,6 +30,7 @@ export default function HeroSection({}: Props) {
         height={128}
         className="relative object-cover rounded-full h-40 w-40 mt-44"
         alt="My photo"
+        placeholder="blur"
         priority
       />
       <div className="mt-5 ">
